@@ -33,3 +33,30 @@ console.log(d);
 //forma correcta
 let name = "Enrique";
 let lastName ="Sixto";
+/*********************************Declare a Read-Only variable with the const keyword************************/
+
+const FCC = "freeCodeCamp";      //Declaramos una variable constante, lo que significa que no se puede reasignar su valor
+let fact = "is cool!";           //Declaramos una variable let que mas adelante cambiará de valor
+fact = "is awesome!";
+console.log(FCC, fact);
+
+/**********************************Arithmetics Operartors****************************************************/
+
+const suma = 5 + 5;
+const resta = 10 - 2.6;
+const multiplicacion = 9 * 6;
+const division = 54 / 12;
+
+/***************************************Escaping Literal Quotes in Strings **********************************/
+const myString = "Enrique said, \"He was going to clean his bedroom\".";
+
+console.group(myString);
+/***************************************Quoting Strings with Single Quotes***********************************/
+const myStr = "href=\"http://www.example.com\" target=\"_blank\">Link";
+console.log(myStr);
+const myStr1 = 'href="http://www.example.com" target="_blank">Link"';
+console.log(myStr1);
+/*****************************************Escape Sequences in Strings***************************************/
+
+const seq = 'FirstLine\n\t\\SecondLine\nThirdLine';
+console.log(seq);
