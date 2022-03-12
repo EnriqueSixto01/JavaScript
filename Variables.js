@@ -25,3 +25,11 @@ console.log(a);
 console.log(b);
 console.log(c);
 console.log(d);
+/****************************************Diference between the var an let keyword ***************************/
+//Error
+//let name = "Enrique";
+//let name = "Yio";
+
+//forma correcta
+let name = "Enrique";
+let lastName ="Sixto";
