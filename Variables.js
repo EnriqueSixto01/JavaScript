@@ -21,10 +21,10 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 d = d + " Variable"
-console.log(a);
+console.log(a); //output NaN
 console.log(b);
 console.log(c);
-console.log(d);
+console.log(d); //output udefined + "Variable"
 /****************************************Diference between the var an let keyword ***************************/
 //Error
 //let name = "Enrique";
