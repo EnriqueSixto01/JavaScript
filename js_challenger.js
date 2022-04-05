@@ -49,5 +49,24 @@ function getLastNCharacters(str)
     return str.slice(-3);
 }
 console.log(getLastNCharacters('Enrique'))
-/********************************************* */
+/******************************************Get first n characters of string*******************************************/
+function getFirstNCharacters(a){
+    return a.slice(0,3)
+}
+console.log(getFirstNCharacters("Enrique"))
+/******************************************Extract first half of string***********************************************/
+function extractFirstHalf(a){
+    return a.slice(0, a.length / 2);
+ }
+ console.log(extractFirstHalf("Enrique"))
 
+ /******************************************Remove last n characters of string ***************************************/
+ function removeLastNCharacters(a){
+     return a.slice(0,-3)
+ }
+ console.log(removeLastNCharacters("Enrique"))
+
+ /******************************************Return the percentage of a number******************************************/
+ function percentage(a,b){
+     
+ }
