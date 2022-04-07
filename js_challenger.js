@@ -142,3 +142,68 @@ console.log(comparisonOperators(8,20))
 // If a contains b, append b to the beginning of a
 // If not, append it to the end
 // Return the concatenation
+function concatenateString(a,b){
+    if(a.includes(b))
+        return b + a
+    else
+        return a + b
+
+}
+
+console.log(concatenateString("Enrique","Sixto"))
+console.log(concatenateString('lips', 's'))
+
+/******************************************Round a number to 2 decimal places****************************************/
+// Write a function that takes a number (a) as argument
+// Round a to the 2nd digit after the comma
+// Return the rounded number
+function roundNumbre(a)
+{
+    return Math.round(a*100)/100
+}
+console.log(roundNumbre(2.1881881))
+
+/******************************************Split a number into its digits *******************************************/
+// Write a function that takes a number (a) as argument
+// Split a into its individual digits and return them in an array
+// Tipp: you might want to change the type of the number for the splitting
+function splitNumbers(a){
+    return a.toString().split('').map(x => Number(x))
+    
+}
+
+console.log(splitNumbers(931))
+
+let a = 12
+console.log(typeof(a + '')) //otra manera de convertir un INT a un STRING sin usar algun metodo.
+console.log(Number('125'))  //convertir un STRING a un INT
+
+/*********************************************Clear up the chaos behind these strings*********************************/
+// It seems like something happened to these strings
+// Can you figure out how to clear up the chaos?
+// Write a function that joins these strings together such that they form the following words:
+// 'Javascript', 'Countryside', and 'Downtown'
+// You might want to apply basic JS string methods such as replace(), split(), slice() etc
+function clear(a,b){
+    let c =""
+    d = b.replace('%','')
+    e = a.replace('%','')
+    for(let i=d.length; i>=0; i--)
+    {   
+        c+= d.charAt(i)
+       
+    }
+    console.log(c)
+   
+    return e[0].toUpperCase() + e.slice(1) + c
+
+    //otra solucion
+    /*const func = x => x.replace('%','');
+      const first = func(a);
+      const second = func(b).split('').reverse().join('');
+      return first.charAt(0).toUpperCase() + first.slice(1) + second; */
+}
+
+console.log(clear('java', 'tpi%rcs'))
+console.log(clear('c%ountry', 'edis'))
+console.log(clear('down', 'nw%ot'))
