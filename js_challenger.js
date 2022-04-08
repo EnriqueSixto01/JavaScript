@@ -207,3 +207,32 @@ function clear(a,b){
 console.log(clear('java', 'tpi%rcs'))
 console.log(clear('c%ountry', 'edis'))
 console.log(clear('down', 'nw%ot'))
+
+/*********************************************Return the next higher prime number**************************************/
+// This challenge is a little bit more complex
+// Write a function that takes a number (a) as argument
+// If a is prime, return a
+// If not, return the next higher prime number
+function esPrimo(numero) {
+    if(numero === 0 || numero === 1 || numero === 4) return 'No es numero primo'
+    for(let i= 2; i < numero / 2; i++)
+    {
+      if(numero % i === 0) 
+        return esPrimo(numero + 1)
+    }
+    return numero
+
+    //otra Solucion
+    /*function isPrime(num) {
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false;
+        }
+            return num > 1;
+    }
+        let n = a;
+        while (!isPrime(n)) n++;
+        return n*/
+  }
+
+console.log(esPrimo(13))
+console.log(esPrimo(1))
